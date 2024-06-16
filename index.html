@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nikhil's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                Nikhil's Portfolio
+            </div>
+            <div class="nav-option">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#section">Service</a>
+                <a href="#" class="contact-link">Contact</a>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="content_1">
+            <div class="self-info">
+                <p>Hi, My name is <span id="main-word">Nikhil</span></p>
+                <p>and I am a Passionate</p>
+                <p><span id="main-word">Web Developer</span></p>
+            </div>
+            <div class="my-image">
+                <img src="image/img.png" alt="Avtar">
+            </div>
+        </div>
+        <div class="toggle-section">
+            <div class="tog_buttons">
+                <button class="toggle-btn active" data-target="skill">Skill</button>
+                <button class="toggle-btn" data-target="experience" id="experience-btn">Experience</button>
+            </div>
+            <div class="tog_content">
+                <div class="skill">
+                    <h2>Skill</h2>
+                    <ul id="points-list">
+                        <li>Expert in creating responsive and accessible web pages using HTML5 and CSS3.</li>
+                        <li>Proficient in modern JavaScript (ES6+) for developing dynamic and interactive web applications.</li>
+                        <li>Skilled in using CSS frameworks like Bootstrap and CSS preprocessors like SASS.</li>
+                        <li>Experienced in DOM manipulation, event handling, and integrating APIs with JavaScript.</li>
+                    </ul>
+                </div>
+                <div class="experience">
+                    <h2>Experience</h2>
+                    <ul id="points-list">
+                        <li>Developed and deployed personal projects using HTML, CSS, and JavaScript.</li>
+                        <li>Engaged in self-study and online courses to deepen understanding of front-end technologies.</li>
+                        <li>Explored new programming languages and frameworks to expand skill set.</li>
+                        <!-- You can add more points as needed -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="project-section">
+            <h2>Recent Projects</h2>
+            <div class="project">
+                <div class="pro_1">
+
+                    <a href="https://enjoylearn.netlify.app/" target="_blank"><img src="image/enlearn_1.png" alt="project-image">
+                        <p>"Online Learning Platform: Empowering Education"</p>
+                    </a>
+
+                </div>
+                <div class="pro_2">
+
+                    <a href="https://tic-tac-toee-gamee.netlify.app/" target="_blank"><img src="image/tic_1.png" alt="project-image">
+                        <p>Tic Tac Toe Game</p>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section contact-info">
+                <h3>Contact Me</h3>
+                <p>Email: <a href="mailto:nikhilbawa172@gmail.com">nikhilbawa172@gmail.com</a></p>
+                <p>Phone: +91 7498023159</p>
+                <p>Location: Shirpur, Maharashtra</p>
+            </div>
+            <div class="footer-section social-media">
+                <h3>Follow Me</h3>
+                <a href="https://www.linkedin.com/in/nikhil-bava-a624801b8?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
+                    <img src="image/icons8-linkedin.svg" alt="LinkedIn">
+                </a>
+                <a href="https://github.com/" target="_blank">
+                    <img src="image/github.svg" alt="GitHub">
+                </a>
+                <a href="https://twitter.com/" target="_blank">
+                    <img src="image/icons8-twitter.svg" alt="Twitter">
+                </a>
+            </div>
+            <div class="footer-section service-links">
+                <h3 id="section">Service</h3>
+                <ul>
+                    <li>Website Design</li>
+                    <li>Mobile-Friendly</li>
+                    <li>E-commerce</li>
+                    <li>SEO Optimization</li>
+                    <li>Maintenance</li>
+                </ul>
+            </div>
+            <div class="footer-section newsletter">
+                <h3>Newsletter</h3>
+                <form action="#">
+                    <input type="email" placeholder="Your email address">
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+            <div class="footer-section legal">
+                <p>&copy; 2024 Nikhil's Portfolio</p>
+                <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
