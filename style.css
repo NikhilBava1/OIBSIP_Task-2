@@ -233,6 +233,49 @@ footer {
     /* Adjust shadow properties as needed */
 }
 
+.skill-bar {
+    margin: 15px 0;
+    width: 60%;
+    /* General width */
+}
+
+.skill-bar span {
+    font-size: 16px;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.progress {
+    width: 100%;
+    background-color: #013a63;
+    height: 18px;
+    /* General height */
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+}
+
+.progress-bar {
+    height: 100%;
+    background-color: #48cae4;
+    width: 0;
+    transition: width 1.5s ease-in-out;
+    border-radius: 5px;
+    position: relative;
+}
+
+.progress-bar::after {
+    content: attr(data-skill);
+    /* Percentage display */
+    position: absolute;
+    right: 10px;
+    color: white;
+    font-weight: bold;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 12px;
+}
+
 
 /* Typing animation */
 
@@ -310,6 +353,14 @@ footer {
     .project a {
         max-width: 100%;
     }
+    .skill-bar {
+        width: 80%;
+        /* Increased width */
+    }
+    .progress {
+        height: 20px;
+        /* Slightly increased height for better visibility */
+    }
 }
 
 @media (max-width: 480px) {
@@ -333,5 +384,17 @@ footer {
     }
     .toggle-btn {
         font-size: 16px;
+    }
+    .skill-bar {
+        width: 90%;
+        /* Full width on mobile screens */
+    }
+    .progress {
+        height: 22px;
+        /* Further increased height for small screens */
+    }
+    .progress-bar::after {
+        font-size: 14px;
+        /* Slightly larger font for percentage text */
     }
 }
