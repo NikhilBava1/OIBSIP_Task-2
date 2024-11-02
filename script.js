@@ -37,3 +37,12 @@ contactLink.addEventListener('click', (event) => {
         footerContact.classList.remove('show-box-shadow');
     }, 3000); // 3000 milliseconds = 3 seconds
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+    const progressBars = document.querySelectorAll(".progress-bar");
+
+    progressBars.forEach(bar => {
+        const skillLevel = bar.getAttribute("data-skill");
+        bar.style.width = skillLevel;
+    });
+});
