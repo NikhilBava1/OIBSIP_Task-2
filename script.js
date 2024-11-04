@@ -82,7 +82,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 document.getElementById("dwnldbtn").addEventListener("click", function() {
     const link = document.createElement("a");
-    link.href = "Resume.pdf";
+    link.href = "Nikhil_CV.pdf";
     link.download = "Nikhil_CV.pdf";
     link.click();
 });
